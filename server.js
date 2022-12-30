@@ -1,5 +1,5 @@
 /*
-CSC3916 HW2
+CSC3916 HW4
 File: Server.js
 Description: Web API scaffolding for Movie API
  */
@@ -13,6 +13,7 @@ var jwt = require('jsonwebtoken');
 var cors = require('cors');
 var User = require('./Users');
 var Movie = require('./Movies');
+var Review = require('./Reviews');
 
 var app = express();
 app.use(cors());
