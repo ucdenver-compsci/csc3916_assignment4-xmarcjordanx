@@ -35,12 +35,12 @@ Leverage the Async.js library or mongo $lookup aggregation capability to join th
 ## Submissions
 - Create a Postman test to test your API. You should include the following requests.
     - All tests from HW3 and
-    - Valid request without the review query parameter.
+    - Valid request without the review query parameter (e.g reviews=true on the /movies route)
     - Invalid request (for a movie not in the database) without the review query parameter. 
-    - Valid request with the review query parameter.
-    - Valid save review method that associates a review with a movie
+    - Valid request with the review query parameter. (e.g reviews=true on the /movies/:id route)
+    - Valid save review method that associates a review with a movie (save a review for a movie in your DB)
     - Invalid save review (movie missing from DB)
-    - Export a report from Google Analytics
+    - Export a report from Google Analytics (only if you do the Extra Credit)
 
 - Create a readme.md at the root of your github repository with the embedded (markdown) to your test collection
     - Within the collection click the (…), share collection -> Embed
