@@ -1,10 +1,14 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-mongoose.connect(process.env.DB);
+mongoose.connect(process.env.DB, { useNewUrlParser: true, useUnifiedTopology:true});
 
 // Movie schema
 var ReviewSchema = new Schema({
+    movieId: { type: Schema.Types.ObjectId, ref: 'Movie' },
+    username: String,
+    review: String,
+    rating: { type: Number, min: 0, max: 5 }
 
 });
 
